@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/" sizes="32x32">
-    <link rel="stylesheet" href="CSS/login-style.css">
-    <link rel="stylesheet" href="CSS/style-border.css">
+    <link rel="stylesheet" href="../CSS/login-style.css">
+    <link rel="stylesheet" href="../CSS/style-border.css">
     <title>Login</title>
 </head>
 <body>
     <nav>
         <div class="logo">Project Title</div>
         <div class="nav-btns">
-            <a href="Html/login-page.html"><button class="login-btn">Login</button></a>
-            <a href="Html/sign-up-page.html"><button class="sign-up-btn">Sign Up</button></a>
         </div>
     </nav>
-    
-<script src="JS/login.js"></script>
+
+    <section>
+        <div class="left-section"></div>
+        <div class="right-section">
+        <div class="text">
+            <p class="login-text">Login</p>
+            <p class="welcome-text">Hello Again!</p>
+        </div>
+        <form action="">
+            <input type="text" name="username" id="uname" placeholder="Username">
+            <input type="password" name="password" id="pass" placeholder="Password">
+            <p class="status">Invalid login</p>
+            <input type="submit" id="submit-btn" value="Login">
+        </form>
+        <div class="suggestion">
+            Don’t have account yet?&nbsp;<a href="../Html/sign-up-page.html">Sign Up</a>
+        </div>
+    </div>
+    </section>
+
+<script src="../JS/login.js" type="text/script"></script>
 </body>
 </html>

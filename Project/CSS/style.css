@@ -24,6 +24,7 @@ nav .logo {
     width: 85px;
     font-size: var(--font-small);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .login-btn {
@@ -31,6 +32,10 @@ nav .logo {
     background-color: transparent;
     color: var(--accent-color);
     font-family: var(--font-primary);
+}
+.login-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
 }
 
 .login-btn a{
@@ -44,6 +49,10 @@ nav .logo {
     border:2px solid var(--primary-color);
     color: var(--white);
     font-family: var(--font-primary);
+}
+.sign-up-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .sign-up-btn a{
@@ -85,8 +94,14 @@ section .text-div {
     border: none;
     color: var(--white);
     font-family: var(--font-primary);
-    padding: 10px 25px;
+    padding: 8px 25px;
     cursor: pointer;
+    transition: 0.3s;
+    border:2px solid var(--primary-color);
+}
+.text-div .create-now:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .text-div .create-now a{

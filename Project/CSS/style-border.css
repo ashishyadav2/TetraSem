@@ -6,11 +6,12 @@
 
 :root {
 --primary-color: #185ADB;
---secondary-color: #88FFF7;
+--secondary-color: #0D47A1;
 --accent-color: #FF2442;
 --black: #000000;
 --black-alt: #263238;
 --grey: #EEEEEE;
+--dark-grey: #9E9E9E;
 --white: #ffffff;
 --white-alt: #F3F5F7;
 --font-primary: Quicksand;
