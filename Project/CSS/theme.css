@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.titleLink {
+    text-decoration: none;
+    outline: none;
+    color: var(--primary-color);
+}
+:root {
+--primary-color: #185ADB;
+--secondary-color: #45caff;
+--accent-color: #FF2442;
+--black: #000000;
+--black-alt: #263238;
+--grey: #EEEEEE;
+--dark-grey: #9E9E9E;
+--white: #ffffff;
+--white-alt: #F3F5F7;
+--font-primary: Quicksand;
+--font-secondary: Times New Roman;
+--font-logo: Righteous;
+--error-color: #FC4F4F;
+--success-color: #388E3C;
+--font-small: 0.9rem;
+--font-medium: 1.5rem;
+--font-medium-alt: 1.2rem;
+--font-large: 2.5rem;
+--border-radius: 8px;
+--box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+--box-shadow-alt: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

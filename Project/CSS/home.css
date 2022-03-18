@@ -1,0 +1,128 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+}
+
+nav {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-alt);
+    position: fixed;
+}
+nav .logo {
+    font-family: var(--font-logo);
+    font-size: var(--font-medium);  
+    color: var(--primary-color);
+}
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+.nav-btns .login-btn, .nav-btns .sign-up-btn{
+    padding: 8px 0;
+    width: 85px;
+    font-size: var(--font-small);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-btns .username {
+    color: var(--black-alt);
+    font-family: var(--font-primary);
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btns img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.login-btn {
+    border:2px solid var(--pripmary-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    font-family: var(--font-primary);
+}
+.login-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+.login-btn a{
+    text-decoration: none;
+}
+.sign-up-btn {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border:2px solid var(--primary-color);
+    color: var(--white);
+    font-family: var(--font-primary);
+}
+.sign-up-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.sign-up-btn a{
+    text-decoration: none;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+section .text-div {
+    width: 55%;
+    padding: 120px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.text-div .heading {
+    font-size: var(--font-large);
+    font-family: var(--font-primary);
+}
+
+.text-div .content {
+    font-size: var(--font-medium);
+    font-family: var(--font-secondary);
+}
+.text-div .create-now {
+    font-size: var(--font-small);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--font-primary);
+    padding: 8px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border:2px solid var(--primary-color);
+}
+.text-div .create-now:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.text-div .create-now a{
+    text-decoration: none;
+}
+section .image-div {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-div img{
+    width: 85%;
+    height: 80%;
+}
