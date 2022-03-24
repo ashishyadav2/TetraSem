@@ -84,16 +84,13 @@ mysqli_close($conn);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/" sizes="32x32">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="1000px.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://localhost/login%20form/CSS/style.css">
+    <link rel="stylesheet" href="http://localhost/login%20form/CSS/theme.css">
     <title>To Do List: Sign Up</title>
 </head>
 <body>
     <nav>
-    <div class="logo"><a href="index.php" class="titleLink">To Do List</a></div>
+    <div class="logo"><a href="http://localhost/login%20form" class="titleLink">To Do List</a></div>
         <div class="nav-btns">
         </div>
     </nav>
@@ -110,9 +107,6 @@ mysqli_close($conn);
             <input type="text" name="cpassword" id="cpass" placeholder="Confirm Password">
             <input type="email" name="email" id="email" placeholder="E-Mail">
             <p class="status"></p>
-            <?php 
-            echo '<p class="status_success">All set good to go</p>';
-            ?>
             <input type="submit" id="submit-btn" value="Create an account">
         </form>
         <div class="suggestion">

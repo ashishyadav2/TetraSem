@@ -49,16 +49,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/" sizes="32x32">
-    <link rel="stylesheet" href="style-login.css">
-    <link rel="stylesheet" href="1000px.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://localhost/login%20form/CSS/login.css">
+    <link rel="stylesheet" href="http://localhost/login%20form/CSS/theme.css">
     <title>To Do List: Login</title>
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="index.php" class="titleLink">To Do List</a></div>
+        <div class="logo"><a href="http://localhost/login%20form/" class="titleLink">To Do List</a></div>
         <div class="nav-btns">
         </div>
     </nav>
@@ -73,11 +70,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         <form action="" method="POST">
             <input type="text" name="username" id="uname" placeholder="Username">
             <input type="password" name="password" id="pass" placeholder="Password">
-            <p class="status">Invalid login</p>
+            <p class="status"></p>
             <input type="submit" id="submit-btn" value="Login">
         </form>
         <div class="suggestion">
-            Don’t have account yet?&nbsp;<a href="sign_up.php">Sign Up</a>
+            Don’t have account yet?&nbsp;<a href="http://localhost/login%20form/PHP/sign-up.php">Sign Up</a>
         </div>
     </div>
     </section>

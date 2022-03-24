@@ -12,6 +12,8 @@ nav {
     align-items: center;
     background-color: var(--white-alt);
     position: fixed;
+    box-shadow: var(--box-shadow);
+    z-index: 9999;
 }
 nav .logo {
     font-family: var(--font-logo);
@@ -73,56 +75,358 @@ nav .logo {
 }
 section {
     width: 100%;
-    height: 100vh;
+    padding: 150px 0 0 0;
     display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
+    justify-content: flex-end;
 }
-section .text-div {
-    width: 55%;
-    padding: 120px 0;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.text-div .heading {
-    font-size: var(--font-large);
-    font-family: var(--font-primary);
-}
-
-.text-div .content {
-    font-size: var(--font-medium);
-    font-family: var(--font-secondary);
-}
-.text-div .create-now {
-    font-size: var(--font-small);
-    background-color: var(--primary-color);
-    outline: none;
-    border: none;
-    color: var(--white);
-    font-family: var(--font-primary);
-    padding: 8px 25px;
-    cursor: pointer;
-    transition: 0.3s;
-    border:2px solid var(--primary-color);
-}
-.text-div .create-now:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-}
-.text-div .create-now a{
-    text-decoration: none;
-}
-section .image-div {
-    width: 45%;
-    height: 100vh;
+.tabs {
+    width: 25%;
+    background-color: var(--grey);
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0 0 0 ;
+    margin-top: -150px;
+    height: 100vh;
+    left: 0;
+    position: fixed;
 }
-.image-div img{
-    width: 85%;
-    height: 80%;
+.sectionHeading{
+    font-family: var(--font-logo);
+    font-size: var(--font-medium);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--primary-color);
+}
+.createTab {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    padding-bottom: 50px;
+}
+.createTab input {
+    border: none;
+    border-bottom: 3px solid var(--dark-grey);
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0 0 5px 0;
+    background-color:transparent;
+    font-size: var(--font-small);
+    font-family: var(--font-primary);
+    outline: none;
+}
+.createTab input:focus {
+    border-bottom: 3px solid var(--primary-color);
+}
+.createTab button {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--font-small);
+}
+.box {
+    width: 90%;
+    padding: 15px 20px;
+    margin: 7px 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    /* align-items: center; */
+    border-top: 5px solid var(--primary-color);
+}
+.boxActive {
+    background-color: var(--active);
+}
+.boxOption {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-alt);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction:column;
+    font-family: var(--font-primary);
+    font-size: var(--font-small);
+    display: none;
+}
+.boxHeading {
+    font-size: var(--font-snall);
+    font-family: var(--font-logo);
+}
+.boxHeading ul{
+    display: flex;
+}
+li {
+    list-style: none;
+    padding: 8px 10px;
+}
+li.item1 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--grey);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.noteSection {
+    width: 40%;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-alt);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.noteBox {
+    width: 90%;
+    background-color: var(--secondary-color);
+    border-top: 5px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-small);
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+    min-height: 45vh;
+}
+.noteBox .dots {
+    padding: 10px;
+    align-self: flex-end;
+}
+.text {
+    padding: 0 15px;
+}
+.date {
+    padding: 10px;
+    align-self: flex-end;
+    font-size: 0.8rem;
+}
+.noteBox .boxOption {
+    width: 100px;
+    position: relative;
+    align-self: flex-end;
+    justify-self: flex-start;
+    z-index: 99;
+    margin-top: -55%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-alt);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction:column;
+    font-family: var(--font-primary);
+    font-size: var(--font-small);
+    display: none;
+}
+.noteBox .boxHeading {
+    font-size: var(--font-snall);
+    font-family: var(--font-logo);
+}
+.noteBox .boxHeading ul{
+    display: flex;
+}
+.todoSection {
+    width: 25%;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-alt);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 3%;
+}
+.todoSection input[type="text"] {
+    border: none;
+    border-bottom: 3px solid var(--dark-grey);
+    width: 90%;
+    padding: 8px 10px;
+    margin: 0 0 5px 0;
+    background-color:transparent;
+    font-size: var(--font-small);
+    font-family: var(--font-primary);
+    outline: none;
+}
+.todoSection input:focus {
+    border-bottom: 3px solid var(--primary-color);
+}
+.todoSection .addTabBtn {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--font-small);
+}
+.todoSection .addTabBtn {
+    width: 90%;
+    padding: 15px 10px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: var(--font-small);
+}
+.todoBox {
+    width: 90%;
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.todoHeading {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.todoTitle{
+    font-size: var(--font-medium-alt);
+    font-family: var(--font-logo);
+}
+.todoHeading button{
+    padding: 5px 8px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--font-small);
+}
+.filter {
+    width: 100%;
+    padding: 10px 0;
+    font-family: var(--font-primary);
+}
+.filter button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: var(--font-small);
+    font-weight: 500;
+    font-family: var(--font-primary);
+
+}
+.filter .activeFilter {
+    color: var(--primary-color);
+}
+.filter button:hover {
+    color: var(--accent-color);
+}
+.todoListUl {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 7px 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    display: flex;
+    background-color: var(--white);
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--font-snall);
+    font-family: var(--font-primary);
+}
+.todoText {
+    padding: 0 10px;
+    width: 95%;
+}
+.todoListUl .boxOption {
+    width: 100px;
+    position: absolute;
+    align-self: flex-start;
+    z-index: 99;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-alt);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction:column;
+    font-family: var(--font-primary);
+    font-size: var(--font-small);
+    display: none;
+}
+.todoListUl .boxHeading {
+    font-size: var(--font-snall);
+    font-family: var(--font-logo);
+}
+.todoListUl .boxHeading ul{
+    display: flex;
+}
+.striked {
+    text-decoration:line-through;
+}
+.reminder {
+    position: absolute;
+    width: 20%;
+    background: var(--white);
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.5);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+.closebtn {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--grey);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.closebtn p {
+    font-size: var(--font-medium-alt);
+    font-family: var(--font-logo);
+}
+.closebtn button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor:pointer;
+}
+.reminder .remdate,.reminder .time {
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.reminder label,.reminder input {
+    font-size: var(--font-small);
+    font-family: var(--font-primary);
+}
+.reminder label {
+    padding-bottom: 10px;
+}
+.reminder input {
+    outline: none;
+    border: 2px solid var(--dark-grey);
+    padding: 8px 15px ;
+    width: 100%;
+
+}
+.reminder .remind {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 25px 0 0 0;
+    background-color: var(--primary-color);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--font-small);
 }
