@@ -84,13 +84,13 @@ mysqli_close($conn);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/" sizes="32x32">
-    <link rel="stylesheet" href="http://localhost/login%20form/CSS/style.css">
-    <link rel="stylesheet" href="http://localhost/login%20form/CSS/theme.css">
+    <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/style.css">
+    <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/theme.css">
     <title>To Do List: Sign Up</title>
 </head>
 <body>
     <nav>
-    <div class="logo"><a href="http://localhost/login%20form" class="titleLink">To Do List</a></div>
+    <div class="logo"><a href="http://mini-project-unixm9.000webhostapp.com" class="titleLink">To Do List</a></div>
         <div class="nav-btns">
         </div>
     </nav>

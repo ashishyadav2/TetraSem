@@ -49,13 +49,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/" sizes="32x32">
-    <link rel="stylesheet" href="http://localhost/login%20form/CSS/login.css">
-    <link rel="stylesheet" href="http://localhost/login%20form/CSS/theme.css">
+    <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/login.css">
+    <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/theme.css">
     <title>To Do List: Login</title>
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="http://localhost/login%20form/" class="titleLink">To Do List</a></div>
+        <div class="logo"><a href="http://mini-project-unixm9.000webhostapp.com/" class="titleLink">To Do List</a></div>
         <div class="nav-btns">
         </div>
     </nav>
@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             <input type="submit" id="submit-btn" value="Login">
         </form>
         <div class="suggestion">
-            Don’t have account yet?&nbsp;<a href="http://localhost/login%20form/PHP/sign-up.php">Sign Up</a>
+            Don’t have account yet?&nbsp;<a href="http://mini-project-unixm9.000webhostapp.com/PHP/sign-up.php">Sign Up</a>
         </div>
     </div>
     </section>
