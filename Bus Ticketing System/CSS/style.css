@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: outfit;
+    /* border: 1px solid black; */
+}
+body {
+    width: 100%;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 35%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.heading {
+    width: 100%;
+    font-size: 2rem;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #BBDEFB;
+}
+.source-sink {
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left,.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-source,.text-dest {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.left option,.right option, select{
+    font-size: 1rem;
+}
+.date-box,.departure,.text-ticket-type,.text-class-type,.passenger {
+    width: 100%;
+    padding: 10px 25px;
+}
+input,select {
+    width: 100%;
+    margin: 6px 0;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+.fancy-text {
+    color: #0D47A1;
+    font-family: righteous;
+    font-size: 1.1rem;
+}
+.button button{
+    width: 100%;
+    padding: 12px 0;
+    background-color: #0D47A1;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.passenger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.passenger input {
+    width: auto;
+}
+.textBox input{
+    width: 100%;
+}
+.passenger button {
+    padding: 5px 10px;
+    background-color: #CFD8DC;
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    font-family: righteous;
+    cursor: pointer;
+}
+.pass {
+    padding: 0 25px;
+}
+.summary {
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}
+.print {
+    padding: 10px 55px;
+    background-color: #0D47A1;
+    outline: none;
+    border: none;
+    align-self: center;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:1200px){
+    .container {
+        width: 50%;
+    }
+}
+@media screen and (max-width:850px){
+    .container {
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px){
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (max-width:480px){
+    .container {
+        width: 100%;
+    }
+    body {
+        align-items: flex-start;
+    }
+}

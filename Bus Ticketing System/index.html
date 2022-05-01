@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="heading">Bus Ticketing System</div>
+
+  <div class="source-sink">
+    <div class="left">
+    <div class="text-source fancy-text">Source</div>
+    <select name="select" id="source-select">
+      <option value="Colaba01">Colaba</option>
+      <option value="Backbay02">Backbay</option>
+      <option value="Mumbai Central08">Mumbai Central</option>
+      <option value="Worli12">Worli</option>
+      <option value="Wadala16">Wadala</option>
+      <option value="Marol34">Marol</option>
+      <option value="Dharavi17">Dharavi</option>
+      <option value="KalaKilla20">KalaKilla</option>
+      <option value="Magathane41">Magathane</option>
+      <option value="Dindoshi36">Dindoshi</option>
+      <option value="Majas33">Majas</option>
+      <option value="Kurla28">Kurla</option>
+      <option value="Bandra22">Bandra</option>
+      <option value="Santacruz24">Santacruz</option>
+      <option value="Goregaon35">Goregaon</option>
+      <option value="Oshiwara34">Oshiwara</option>
+      <option value="Poisar43">Poisar</option>
+      <option value="Gorai66">Gorai</option>
+      <option value="Malvani42">Malvani</option>
+      <option value="Malad40">Malad</option>
+      <option value="Anik22">Anik</option>
+      <option value="Prateeksha Nagar19">Prateeksha Nagar</option>
+      <option value="Deonar21">Deonar</option>
+      <option value="Shivaji Nagar23">Shivaji Nagar</option>
+      <option value="Ghatkopar25">Ghatkopar</option>
+      <option value="Vikhroli29">Vikhroli</option>
+      <option value="Mulund39">Mulund</option>
+    </select>
+  </div>
+
+  <div class="right">
+    <div class="text-dest fancy-text">Destination</div>
+    <select name="select" id="dest-select">
+      <option value="Colaba01">Colaba</option>
+      <option value="Backbay02">Backbay</option>
+      <option value="Mumbai Central08">Mumbai Central</option>
+      <option value="Worli12">Worli</option>
+      <option value="Wadala16">Wadala</option>
+      <option value="Marol34">Marol</option>
+      <option value="Dharavi17">Dharavi</option>
+      <option value="KalaKilla20">KalaKilla</option>
+      <option value="Magathane41">Magathane</option>
+      <option value="Dindoshi36">Dindoshi</option>
+      <option value="Majas33">Majas</option>
+      <option value="Kurla28">Kurla</option>
+      <option value="Bandra22">Bandra</option>
+      <option value="Santacruz24">Santacruz</option>
+      <option value="Goregaon35">Goregaon</option>
+      <option value="Oshiwara34">Oshiwara</option>
+      <option value="Poisar43">Poisar</option>
+      <option value="Gorai66">Gorai</option>
+      <option value="Malvani42">Malvani</option>
+      <option value="Malad40">Malad</option>
+      <option value="Anik22">Anik</option>
+      <option value="Prateeksha Nagar19">Prateeksha Nagar</option>
+      <option value="Deonar21">Deonar</option>
+      <option value="Shivaji Nagar23">Shivaji Nagar</option>
+      <option value="Ghatkopar25">Ghatkopar</option>
+      <option value="Vikhroli29">Vikhroli</option>
+      <option value="Mulund39">Mulund</option>
+    </select>
+  </div>
+  </div>
+
+  <div class="date-box">
+    <div class="dept-text fancy-text">Date Of Journey</div>
+    <input type="date" name="date" id="date">
+  </div>
+
+  <div class="departure">
+    <div class="dept-text fancy-text">Departure</div>
+    <select name="select" id="time-select">
+      <option value="0630">06:30AM</option>
+      <option value="0700">07:00AM</option>
+      <option value="0730">07:30AM</option>
+      <option value="0800">08:00AM</option>
+      <option value="0830">08:30AM</option>
+      <option value="1130">11:30AM</option>
+      <option value="1200">12:00PM</option>
+      <option value="1230">12:30PM</option>
+      <option value="1730">05:30PM</option>
+      <option value="1800">06:00PM</option>
+      <option value="1830">06:30PM</option>
+    </select>
+  </div>
+
+    <div class="text-ticket-type"><p class="fancy-text">Ticket Type</p>
+    <select name="select" id="ticket-select">
+      <option value="One Way">One Way</option>
+      <option value="Round Trip">Round Trip</option>
+    </select>
+  </div>
+
+    <div class="text-class-type"><p class="fancy-text">Class</p>
+    <select name="select" id="class-select">
+      <option value="Premium Class">Premium Class</option>
+      <option value="Economy Class" selected>Economy Class</option>
+    </select>
+  </div>
+  
+
+  <p class="fancy-text pass">Passenger's Name</p>
+  <div class="passenger">
+    <div class="textBox">
+    <input type="text" class ="passinput" name="uname" id="username" placeholder="Passenger 1">
+    <input type="text" class ="passinput" name="uname" id="username" placeholder="Passenger 2">
+    <input type="text" class ="passinput" name="uname" id="username" placeholder="Passenger 3">
+    <input type="text" class ="passinput" name="uname" id="username" placeholder="Passenger 4">
+    <input type="text" class ="passinput" name="uname" id="username" placeholder="Passenger 5">
+  </div>
+  </div>
+
+  <div class="button"><button class="submit" onclick="masterFunction()" > Submit</button></div>
+
+ 
+</div>
+<div class="summary">
+  <div class="table">
+
+  </div>
+  <button class="print" onclick="window.print()">Print</button>
+</div>
+<script src="./JS/main.js"></script>
+</body>
+</html>

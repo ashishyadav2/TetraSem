@@ -51,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="icon" href="Images/" sizes="32x32">
     <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/login.css">
     <link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/theme.css">
+<link rel="stylesheet" href="http://mini-project-unixm9.000webhostapp.com/CSS/responsive-1000px.css">
     <title>To Do List: Login</title>
 </head>
 <body>
