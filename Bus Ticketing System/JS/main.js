@@ -207,7 +207,7 @@ function displaySummary() {
       line-height:normal'><span lang=EN-GB style='font-family:Outfit'>${nameArray[0]}</span></p>
       </td>
      </tr>
-     <tr style='height:19.25pt'>
+     <!--<tr style='height:19.25pt'>
       <td width="50%" style='width:50.12%;border:solid windowtext 1.0pt;border-top:
       none;padding:0in 5.4pt 0in 5.4pt;height:19.25pt'>
       <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
@@ -258,7 +258,7 @@ function displaySummary() {
       <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
       line-height:normal'><span lang=EN-GB style='font-family:Outfit'>${nameArray[4]}</span></p>
       </td>
-     </tr>
+     </tr>-->
     </table>
     
     <p class=MsoNormal><span lang=EN-GB style='font-family:Outfit'>&nbsp;</span></p>
